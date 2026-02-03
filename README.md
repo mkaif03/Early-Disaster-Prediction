@@ -1,23 +1,23 @@
-# 🌪️ Early Disaster Prediction using Machine Learning
+#  Early Disaster Prediction using Machine Learning
 
 This is an intelligent desktop-based application that predicts natural disasters such as floods, earthquakes, and cyclones using machine learning models. It alerts users in real-time with an interactive GUI, sound alerts, and report generation.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- ✅ Predict disasters (Flood, Earthquake, Cyclone, or None) using ML
-- 📊 Visual prediction charts using `matplotlib`
-- 🖥️ Interactive GUI built with `customtkinter`
-- 🧾 PDF Report generation with disaster result
-- 🔊 Sound alert system for high-risk predictions
-- 📂 Dynamic input handling from `latest_input.csv`
-- 🧠 Model retrainable via `train_model.py`
-- 📁 Structured logging of predictions
+-  Predict disasters (Flood, Earthquake, Cyclone, or None) using ML
+-  Visual prediction charts using `matplotlib`
+-  Interactive GUI built with `customtkinter`
+-  PDF Report generation with disaster result
+-  Sound alert system for high-risk predictions
+-  Dynamic input handling from `latest_input.csv`
+-  Model retrainable via `train_model.py`
+-  Structured logging of predictions
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Module            | Tech / Tool Used                  |
 |-------------------|-----------------------------------|
@@ -31,36 +31,38 @@ This is an intelligent desktop-based application that predicts natural disasters
 
 ---
 
-## 📂 Project Folder Structure
+##  Project Folder Structure
 
+
+```text
 Early_Disaster_Prediction/
-│
 ├── app/
-│ ├── gui.py # GUI logic
-│ ├── predict.py # ML prediction logic
-│ ├── csv_reader.py # Input CSV reader
-│ ├── logs/ # Prediction log files
-│ ├── *.pdf # Exported reports
-│ └── model.pkl # Latest model for prediction
+│   ├── gui.py                 # GUI logic
+│   ├── predict.py             # ML prediction logic
+│   ├── csv_reader.py          # Input CSV reader
+│   ├── logs/                  # Prediction log files
+│   ├── *.pdf                  # Exported reports
+│   └── model.pkl              # Latest model for prediction
 │
 ├── data/
-│ └── flood_dataset.csv # Training dataset
+│   └── flood_dataset.csv      # Training dataset
 │
 ├── model/
-│ ├── disaster_model.pkl # Trained model file
-│ └── main.py # Model retraining script (optional)
+│   ├── disaster_model.pkl     # Trained model file
+│   └── main.py                # Model retraining script (optional)
 │
-├── main.py # Combined GUI + Logic launcher
-├── main_predictor.py # Standalone prediction module
-├── train_model.py # Training script (generates .pkl)
-├── requirements.txt # Required Python libraries
-└── README.md # Project documentation
+├── main.py                    # Combined GUI + Logic launcher
+├── main_predictor.py          # Standalone prediction module
+├── train_model.py             # Training script (generates .pkl)
+├── requirements.txt           # Required Python libraries
+└── README.md                  # Project documentation
+```
 
 
 
 ---
 
-## 🧠 How the Model Works
+##  How the Model Works
 
 - **Algorithm**: Random Forest Classifier
 - **Input Features**:
@@ -73,18 +75,18 @@ Early_Disaster_Prediction/
 
 ---
 
-## 🖼️ GUI Functionalities
+##  GUI Functionalities
 
-- 🧾 Accept user input (4 parameters)
-- 📈 Display prediction result with confidence
-- 📊 Real-time plot of disaster probability
-- 🔊 Trigger sound if disaster is likely
-- 🖨️ Export results into PDF report
-- 🧠 Auto-load trained model for faster inference
+-  Accept user input (4 parameters)
+-  Display prediction result with confidence
+-  Real-time plot of disaster probability
+-  Trigger sound if disaster is likely
+-  Export results into PDF report
+-  Auto-load trained model for faster inference
 
 ---
 
-## 🧪 Installation & Setup Guide
+##  Installation & Setup Guide
 
 ### 1️⃣ Clone the Repository
 
@@ -124,7 +126,7 @@ To retrain ML model:
 
 
 python train_model.py
-📸 Sample Output
+ Sample Output
 
 
 
@@ -133,7 +135,7 @@ Probability: 89.2%
 Alert Triggered: YES
 PDF Report Saved: Disaster_Report_20250725_073605.pdf
 
-📜 Dependencies
+ Dependencies
 Here are the Python libraries used:
 
 nginx
@@ -147,7 +149,7 @@ customtkinter
 playsound
 All are included in requirements.txt
 
-📌 Future Enhancements
+ Future Enhancements
 Integrate live weather API (OpenWeatherMap)
 
 Add SMS/Email Alert system using Twilio
@@ -158,16 +160,13 @@ Store user inputs in DB for analytics
 
 Improve model with real-time weather feeds
 
-✨ Author
-Dhanraj Rajendra Sonawane
-📧 dhanrajsonawane268@gmail.com
-🧑‍🎓 MCA | Python & AI/ML Enthusiast
-🔗 GitHub Profile
+ Author
+Mohammed Kaif Syed
 
-📢 Contribution
+ Contribution
 Feel free to fork this repo, create a branch, make changes and open a pull request.
 For major feature changes, open an issue first to discuss what you would like to change.
 
-📜 License
+ License
 This project is licensed under the MIT License.
 You can use, distribute, and modify freely with attribution.
